@@ -1,0 +1,47 @@
+$primaryColor: linear-gradient(rgb(55, 58, 255), rgb(132, 134, 255));
+$sectionHeight: 100vh;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.div-1,
+.div-3 {
+  background-image: $primaryColor;
+}
+
+div {
+  height: $sectionHeight;
+}
+
+h1 {
+  color: white;
+  margin-block-start: 0;
+  padding-top: 10vh;
+  font-size: 7vw;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+.circle {
+  margin: 6vw auto;
+  background-color: white;
+  border-radius: 20vw;
+  height: 20vw;
+  width: 20vw;
+}
+
+code {
+  color: white;
+  font-size: 4vw;
+}
