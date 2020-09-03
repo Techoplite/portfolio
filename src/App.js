@@ -1,10 +1,13 @@
 import React from 'react';
 import './sass/main.scss';
+import Home from './components/Home'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <section>Welcome</section>
+      <Navbar />
+      <Home />
       <section>About</section>
       <section>Projects</section>
     </div>

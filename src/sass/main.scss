@@ -1,5 +1,119 @@
-$color: red;
+@import "variables", "animations", "mixins";
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0px;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: $background-color;
+  color: $font-color;
+  font-family: "Raleway", sans-serif;
+}
+
+.flex-column {
+  @include flex-center(column);
+}
+
+.flex-row {
+  @include flex-center(row);
+}
 
 section {
-  border: 1px solid $color;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+code {
+  font-size: 1.5rem;
+  word-break: break-word;
+}
+
+.animated-text {
+  height: 100%;
+  margin: auto;
+}
+
+button {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: none;
+  border: 2px solid $light;
+  color: $light;
+  margin: 1rem;
+  max-width: 80vw;
+  min-width: 93px;
+}
+
+.job {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 $base-padding;
+}
+
+#greeting {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: $base-padding;
+}
+
+.navbar {
+  background: $navbar-color;
+  display: flex;
+  flex-direction: column;
+}
+
+pre {
+  margin: 0;
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 4px;
+}
+
+.hamburger {
+  width: fit-content;
+  margin: 0.5rem 0.8rem;
+}
+
+.hamburger-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  background-color: darken($navbar-color, 7%);
+  padding: $base-padding/2;
+}
+
+.link {
+  padding: $base-padding;
+}
+
+.navbar {
+  z-index: 2;
+  position: absolute;
+  width: 100vw;
+}
+
+.hidden {
+  display: none;
 }
