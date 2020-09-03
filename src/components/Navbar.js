@@ -17,10 +17,10 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={`nav-links ${navLinks}`}>
-                <div className="link">Home</div>
-                <div className="link">About</div>
-                <div className="link">Portfolio</div>
-                <div className="link">Contact</div>
+                <div className="link">HOME</div>
+                <div className="link">ABOUT</div>
+                <div className="link">PORTFOLIO</div>
+                <div className="link">CONTACT</div>
             </div>
         </div>
     );
