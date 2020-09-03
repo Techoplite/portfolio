@@ -43,15 +43,18 @@ code {
 }
 
 button {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 1rem;
-  padding: 1rem;
+  padding: $base-padding/1.5;
   background: none;
   border: 2px solid $light;
   color: $light;
   margin: 1rem;
   max-width: 80vw;
   min-width: 93px;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
 }
 
 .job {
@@ -80,6 +83,10 @@ button {
 
 pre {
   margin: 0;
+}
+
+.home-text {
+  min-width: 204px;
 }
 
 .line {
@@ -116,4 +123,8 @@ pre {
 
 .hidden {
   display: none;
+}
+
+.angle-double-down {
+  margin-left: 10px;
 }

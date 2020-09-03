@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
     return (
@@ -15,7 +17,7 @@ const Home = () => {
 
                     </div>
                 </div>
-                <button>More about me</button>
+                <button>More about me <i className="angle-double-down"><FontAwesomeIcon icon={faAngleDoubleDown} /></i></button>
             </div>
         </section>
 
