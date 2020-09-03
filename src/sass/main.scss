@@ -122,6 +122,7 @@ pre {
   z-index: 2;
   position: absolute;
   width: 100vw;
+  border-bottom: 5px solid darken($background-color, 2%);
 }
 
 .hidden {
