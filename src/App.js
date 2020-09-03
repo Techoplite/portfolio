@@ -1,16 +1,12 @@
 import React from 'react';
-import './style.scss';
+import './sass/main.scss';
 
 function App() {
   return (
     <div className="App">
-      <div className="div-1">
-        <h1>Front-end Developer</h1>
-        <code>Hello world, I am Mirko...</code>
-        <div className="circle"></div>
-      </div>
-      <div className="div-2"></div>
-      <div className="div-3"></div>
+      <section>Welcome</section>
+      <section>About</section>
+      <section>Projects</section>
     </div>
   );
 }
