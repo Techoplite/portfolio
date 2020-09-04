@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-      <section>About</section>
+      <section id="about">About</section>
       <section>Projects</section>
     </div>
   );

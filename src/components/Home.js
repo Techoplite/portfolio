@@ -1,8 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-scroll'
 
 const Home = () => {
+
     return (
         <section>
             <div className="flex-column">
@@ -17,7 +19,10 @@ const Home = () => {
 
                     </div>
                 </div>
-                <button>More about me <i className="angle-double-down"><FontAwesomeIcon icon={faAngleDoubleDown} /></i></button>
+                <Link to="about" smooth="true" duration="500">
+                    <button>More about me <i className="angle-double-down"><FontAwesomeIcon icon={faAngleDoubleDown} /></i>
+                    </button>
+                </Link>
             </div>
         </section>
 
