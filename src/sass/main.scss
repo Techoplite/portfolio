@@ -125,3 +125,13 @@ button {
     color: $highlight;
   }
 }
+
+.blurred {
+  filter: blur(2.7px);
+  transition: all 0.5s ease;
+}
+
+.no-filter {
+  filter: blur(0);
+  transition: all 0.5s ease;
+}

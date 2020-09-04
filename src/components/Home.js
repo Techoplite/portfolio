@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 
-const Home = () => {
+const Home = (props) => {
+
+    const [homeFilter, setHomeFilter] = useState("no-filter")
+
+    useEffect(() => {
+        props.hamburger === "open" ? setHomeFilter("blurred") : setHomeFilter("no-filter")
+    }, [setHomeFilter, props.hamburger]);
+
+
+
+
 
     return (
-        <section>
+        <section id="home" className={`${homeFilter}`}>
             <div className="flex-column">
                 <div className="flex-column home-text">
                     <div className="flex-row" id="greeting">
@@ -19,7 +29,7 @@ const Home = () => {
 
                     </div>
                 </div>
-                <Link to="about" smooth="true" duration="500">
+                <Link to="about" smooth="true" duration={500}>
                     <button>More about me <i className="angle-double-down"><FontAwesomeIcon icon={faAngleDoubleDown} /></i>
                     </button>
                 </Link>

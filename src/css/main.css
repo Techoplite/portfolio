@@ -35,7 +35,7 @@ section {
 }
 
 code {
-  font-size: 1.5rem;
+  font-size: 2rem;
   word-break: break-word;
 }
 
@@ -229,5 +229,19 @@ button .angle-double-down {
 
 .home-text .highlight {
   color: #ffb224;
+}
+
+.blurred {
+  -webkit-filter: blur(2.7px);
+          filter: blur(2.7px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.no-filter {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 /*# sourceMappingURL=main.css.map */
