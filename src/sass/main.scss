@@ -45,7 +45,8 @@ button {
     top: 60px;
     position: absolute;
     width: 100%;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 3px solid $navbar-color;
   }
 
   .link {

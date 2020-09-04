@@ -129,8 +129,9 @@ button .angle-double-down {
   top: 60px;
   position: absolute;
   width: 100%;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #19192d;
 }
 
 .navbar .link {
