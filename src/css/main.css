@@ -13,6 +13,7 @@ html {
   background: #23233f;
   color: white;
   font-family: "Raleway", sans-serif;
+  background: url("./../images/background.svg");
 }
 
 section {
