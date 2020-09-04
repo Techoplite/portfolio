@@ -1,22 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 
 const Home = (props) => {
 
-    const [homeFilter, setHomeFilter] = useState("no-filter")
-
-    useEffect(() => {
-        props.hamburger === "open" ? setHomeFilter("blurred") : setHomeFilter("no-filter")
-    }, [setHomeFilter, props.hamburger]);
-
-
-
-
-
     return (
-        <section id="home" className={`${homeFilter}`}>
+        <section id="home" className={`${props.filter}`}>
             <div className="flex-column">
                 <div className="flex-column home-text">
                     <div className="flex-row" id="greeting">
