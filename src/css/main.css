@@ -105,7 +105,7 @@ button .angle-double-down {
 }
 
 .navbar {
-  background: #23233f;
+  background: #19192d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,11 +116,11 @@ button .angle-double-down {
   z-index: 2;
   position: absolute;
   width: 100vw;
-  border-bottom: 5px solid #1f1f38;
+  border-bottom: 3px solid #313158;
 }
 
 .navbar .nav-links {
-  background-color: #161628;
+  background-color: #0c0c16;
   top: 60px;
   position: absolute;
   width: 100%;
@@ -223,6 +223,6 @@ button .angle-double-down {
 }
 
 .home-text .highlight {
-  color: yellow;
+  color: #ffb224;
 }
 /*# sourceMappingURL=main.css.map */

@@ -13,8 +13,8 @@ button {
   margin-top: 1rem;
   padding: $base-padding/1.5;
   background: none;
-  border: 2px solid $light;
-  color: $light;
+  border: 2px solid $white;
+  color: $white;
   margin: 1rem;
   max-width: 80vw;
   min-width: 93px;
@@ -34,7 +34,7 @@ button {
   z-index: 2;
   position: absolute;
   width: 100vw;
-  border-bottom: 5px solid darken($navbar-color, 2%);
+  border-bottom: 3px solid lighten($navbar-color, 13%);
 
   .nav-links {
     background-color: darken($navbar-color, 7%);
@@ -118,6 +118,6 @@ button {
   }
 
   .highlight {
-    color: yellow;
+    color: $highlight;
   }
 }
