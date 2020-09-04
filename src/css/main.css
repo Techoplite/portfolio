@@ -10,10 +10,10 @@ html {
   text-align: center;
   margin: 0;
   padding: 0;
-  background: #23233f;
   color: white;
   font-family: "Raleway", sans-serif;
-  background: url("./../images/background.svg");
+  background: url("./../images/background.svg") no-repeat scroll;
+  background-size: cover;
 }
 
 section {
@@ -105,7 +105,7 @@ button .angle-double-down {
 }
 
 .navbar {
-  background: #11113a;
+  background: #23233f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +120,7 @@ button .angle-double-down {
 }
 
 .navbar .nav-links {
-  background-color: #09091e;
+  background-color: #161628;
   top: 60px;
   position: absolute;
   width: 100%;

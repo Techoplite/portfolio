@@ -34,7 +34,7 @@ button {
   z-index: 2;
   position: absolute;
   width: 100vw;
-  border-bottom: 5px solid darken($background-color, 2%);
+  border-bottom: 5px solid darken($navbar-color, 2%);
 
   .nav-links {
     background-color: darken($navbar-color, 7%);

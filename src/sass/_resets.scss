@@ -8,10 +8,10 @@ html {
   text-align: center;
   margin: 0;
   padding: 0;
-  background: $background-color;
   color: $font-color;
   font-family: "Raleway", sans-serif;
-  background: url("./../images/background.svg");
+  background: url("./../images/background.svg") no-repeat scroll;
+  background-size: cover;
 }
 
 section {
