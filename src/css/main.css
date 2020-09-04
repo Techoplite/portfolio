@@ -171,8 +171,10 @@ button .angle-double-down {
   height: 4px;
   background-color: white;
   margin: 4px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: -webkit-transform width 0.2s ease-out;
+  transition: -webkit-transform width 0.2s ease-out;
+  transition: transform width 0.2s ease-out;
+  transition: transform width 0.2s ease-out, -webkit-transform width 0.2s ease-out;
 }
 
 .navbar .hamburger #top-line.open {
@@ -235,14 +237,18 @@ button .angle-double-down {
 .blurred {
   -webkit-filter: blur(2.7px);
           filter: blur(2.7px);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
 }
 
 .no-filter {
   -webkit-filter: blur(0);
           filter: blur(0);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
 }
 /*# sourceMappingURL=main.css.map */
