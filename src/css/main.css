@@ -119,7 +119,7 @@ button .angle-double-down {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   border-bottom: 3px solid #313158;
 }
