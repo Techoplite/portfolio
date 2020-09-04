@@ -10,7 +10,6 @@
 
 button {
   font-size: 1rem;
-  margin-top: 1rem;
   padding: $base-padding/1.5;
   background: none;
   border: 2px solid $white;
@@ -21,6 +20,11 @@ button {
   margin: 3rem 0 0 0;
   display: flex;
   align-items: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba($navbar-color, 0.5);
+  }
 
   .angle-double-down {
     margin-left: 10px;
