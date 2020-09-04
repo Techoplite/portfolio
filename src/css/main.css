@@ -1,63 +1,207 @@
-/* The typing effect */
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+body,
+html {
+  margin: 0px;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #23233f;
+  color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 section {
-  border: 1px solid red;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
 }
 
-.typewriter h1 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.05em;
-  /* Adjust as needed */
-  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-          animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+code {
+  font-size: 1.5rem;
+  word-break: break-word;
+}
+
+pre {
+  margin: 0;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-code {
-  font-size: 3vw;
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button {
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.66667rem;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  margin: 1rem;
+  max-width: 80vw;
+  min-width: 93px;
+  margin: 3rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button .angle-double-down {
+  margin-left: 10px;
+}
+
+.navbar {
+  background: #11113a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  width: 100vw;
+  border-bottom: 5px solid #1f1f38;
+}
+
+.navbar .nav-links {
+  background-color: #09091e;
+  top: 60px;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar .link {
+  padding: 1rem;
+}
+
+.navbar .visible {
+  height: 220px;
+  padding: 0.5rem;
+}
+
+.navbar .hidden {
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+}
+
+.navbar .hamburger-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar .hamburger {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem 0.8rem;
+}
+
+.navbar .hamburger .line {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 4px;
+}
+
+.home-text {
+  min-width: 204px;
+  width: 99%;
+  margin-top: 30%;
+}
+
+.home-text .job {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.home-text #greeting {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  padding: 1rem;
+}
+
+.home-text .highlight {
+  color: yellow;
 }
 /*# sourceMappingURL=main.css.map */

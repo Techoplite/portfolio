@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0px;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: $background-color;
+  color: $font-color;
+  font-family: "Raleway", sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+code {
+  font-size: 1.5rem;
+  word-break: break-word;
+}
+
+pre {
+  margin: 0;
+}
