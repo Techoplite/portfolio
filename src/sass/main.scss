@@ -74,6 +74,22 @@ button {
       height: 4px;
       background-color: white;
       margin: 4px;
+      transition: all 0.2s ease-out;
+    }
+
+    #top-line.open {
+      transform: rotate(45deg) translateY(5px) translateX(6px);
+      width: 35px;
+    }
+
+    #bottom-line.open {
+      transform: rotate(-45deg) translateY(-6px) translateX(5px);
+      width: 35px;
+    }
+
+    #middle-line.open {
+      opacity: 0;
+      transform: rotate(180deg);
     }
   }
 }

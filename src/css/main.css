@@ -164,6 +164,26 @@ button .angle-double-down {
   height: 4px;
   background-color: white;
   margin: 4px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.navbar .hamburger #top-line.open {
+  -webkit-transform: rotate(45deg) translateY(5px) translateX(6px);
+          transform: rotate(45deg) translateY(5px) translateX(6px);
+  width: 35px;
+}
+
+.navbar .hamburger #bottom-line.open {
+  -webkit-transform: rotate(-45deg) translateY(-6px) translateX(5px);
+          transform: rotate(-45deg) translateY(-6px) translateX(5px);
+  width: 35px;
+}
+
+.navbar .hamburger #middle-line.open {
+  opacity: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .home-text {
