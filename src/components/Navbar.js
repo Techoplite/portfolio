@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 
 const Navbar = (props) => {
 
-    const onClickHandler = () => {
+    const handleOnClick = () => {
         return props.hamburger === "open" ? (props.setNavLinks("hidden"), props.setHamburger("closed")) : (props.setNavLinks("visible"), props.setHamburger("open"))
     }
 
@@ -21,19 +21,19 @@ const Navbar = (props) => {
                     to="home"
                     smooth="true"
                     duration={500} >
-                    <div className="link" onClick={onClickHandler}>HOME</div>
+                    <div className="link" onClick={handleOnClick}>HOME</div>
                 </Link>
                 <Link
                     to="about"
                     smooth="true"
                     duration={500}>
-                    <div className="link" onClick={onClickHandler}>ABOUT</div>
+                    <div className="link" onClick={handleOnClick}>ABOUT</div>
                 </Link>
                 <Link
-                    to="portfolio"
+                    to="projects"
                     smooth="true"
                     duration={500}>
-                    <div className="link">PORTFOLIO</div>
+                    <div className="link" onClick={handleOnClick}>PROJECTS</div>
                 </Link>
                 <Link
                     to="contact"
