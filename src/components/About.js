@@ -12,7 +12,7 @@ const About = (props) => {
                 </div>
                 <div className="paragraph">
                     <p>I am a <strong>Computing and IT graduated</strong> with a passion for programming.</p>
-                    <p>This is my tech stack</p>
+                    <p>This is my tech stack.</p>
                 </div>
                 <div className="icons-list">
                     <ProgrammingIcons />

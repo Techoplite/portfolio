@@ -177,10 +177,14 @@ p {
 }
 
 #projects {
+  strong {
+    font-size: 1.7rem;
+  }
+
   p {
     text-align: left;
     width: 80%;
-    margin: 2rem auto 1rem auto;
+    margin: 1rem auto 2rem auto;
   }
 
   .description {
