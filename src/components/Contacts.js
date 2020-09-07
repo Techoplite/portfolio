@@ -9,28 +9,16 @@ const Contacts = (props) => {
                         CONTACTS
                     </h1>
                 </div>
-                <div className="paragraph">
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                    <p id="description">074964633113</p>
-                </div>
-                <div className="projects-list">
-
+                <p className="description">You can easily contact me via...</p>
+                <div className="means-of-contact">
+                    <div className="paragraph">
+                        <h2>Mobile Phone</h2>
+                        <p>07490680828</p>
+                    </div>
+                    <div className="paragraph">
+                        <h2>Email</h2>
+                        <p>oriccimirko@gmail.com</p>
+                    </div>
                 </div>
             </div>
         </section>
