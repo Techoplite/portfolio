@@ -3,8 +3,8 @@ import ProgrammingIcons from './icons/ProgrammingIcons';
 
 const About = (props) => {
     return (
-        <section id="about" className={`about ${props.filter}`}>
-            <div className="about">
+        <section id="about" className={`${props.filter}`}>
+            <div className="section-wrapper">
                 <div className="header">
                     <h1>
                         ABOUT

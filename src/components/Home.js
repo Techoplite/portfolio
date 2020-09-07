@@ -19,7 +19,11 @@ const Home = (props) => {
 
                     </div>
                 </div>
-                <Link to="about" smooth="true" duration={500}>
+                <Link
+                    to="about"
+                    smooth="true"
+                    offset={-63}
+                    duration={500}>
                     <button>More about me <i className="angle-double-down"><FontAwesomeIcon icon={faAngleDoubleDown} /></i>
                     </button>
                 </Link>

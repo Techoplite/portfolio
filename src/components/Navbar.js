@@ -26,12 +26,14 @@ const Navbar = (props) => {
                 <Link
                     to="about"
                     smooth="true"
+                    offset={-63}
                     duration={500}>
                     <div className="link" onClick={handleOnClick}>ABOUT</div>
                 </Link>
                 <Link
                     to="projects"
                     smooth="true"
+                    offset={-63}
                     duration={500}>
                     <div className="link" onClick={handleOnClick}>PROJECTS</div>
                 </Link>
