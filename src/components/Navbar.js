@@ -38,10 +38,11 @@ const Navbar = (props) => {
                     <div className="link" onClick={handleOnClick}>PROJECTS</div>
                 </Link>
                 <Link
-                    to="contact"
+                    to="contacts"
                     smooth="true"
+                    offset={-63}
                     duration={500}>
-                    <div className="link">CONTACT</div>
+                    <div className="link" onClick={handleOnClick}>CONTACTS</div>
                 </Link >
             </div >
         </div >
