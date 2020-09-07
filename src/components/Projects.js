@@ -13,7 +13,7 @@ const Projects = (props) => {
                     </h1>
                 </div>
                 <div className="paragraph">
-                    <p>Here are some of my projects.</p>
+                    <p id="description">Here are some of my projects.</p>
                 </div>
                 <div className="projects-list">
                     <p><strong>eBazar</strong></p>
