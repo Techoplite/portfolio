@@ -148,8 +148,8 @@ button {
   margin-top: 30%;
 
   @media (min-width: $tablet) {
-        margin-top: 0;
-    }
+    margin-top: 0;
+  }
 
   .job {
     font-family: "IBM Plex Sans", sans-serif;
@@ -213,6 +213,12 @@ p {
   padding: 0 1rem;
   flex-wrap: wrap;
   margin-top: -0.5rem;
+
+  @media (min-width: $desktop) {
+    width: 50%;
+    margin: auto;
+    padding: 4rem;
+  }
 }
 
 .paragraph {
@@ -234,6 +240,16 @@ p {
 
     &:hover {
       width: 75%;
+    }
+
+    @media (min-width: $desktop) {
+      width: 60%;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        width: 55%;
+        margin: 3%;
+      }
     }
   }
 
@@ -270,6 +286,8 @@ p {
 }
 
 #contacts {
+  border: none;
+
   p {
     text-align: left;
     width: 80%;
