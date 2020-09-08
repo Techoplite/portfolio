@@ -15,7 +15,7 @@ const Home = (props) => {
                     </div>
 
                     <div className="job">
-                        Frontend Developer
+                        FRONTEND DEVELOPER
 
                     </div>
                 </div>

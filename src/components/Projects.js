@@ -13,7 +13,7 @@ const Projects = (props) => {
                     </h1>
                 </div>
                 <div className="paragraph">
-                    <p className="description">Here are some of my projects.</p>
+                    <p className="description" id="project-description">Here are some of my projects.</p>
                 </div>
                 <div className="projects-list">
                     <a href="https://github.com/Techoplite/eBazar">
@@ -32,6 +32,7 @@ const Projects = (props) => {
                         </p>
                         <img src={theAssessmentSystem} alt="the-assessment-system" />
                     </a>
+                    <p className="description">And, of course, this very website...</p>
                 </div>
             </div>
         </section>

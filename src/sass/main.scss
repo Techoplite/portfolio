@@ -22,6 +22,10 @@ button {
   align-items: center;
   transition: all 0.2s ease;
 
+  @media (min-width: $tablet) {
+    padding: $base-padding;
+  }
+
   &:hover {
     background: rgba($navbar-color, 0.5);
   }
@@ -47,6 +51,13 @@ button {
     width: 100%;
     transition: all 0.3s ease-in-out;
     border-bottom: 3px solid $navbar-color;
+
+    @media (min-width: $tablet) {
+      transition: none;
+      display: flex;
+      top: 0;
+      background: $navbar-color;
+    }
   }
 
   .link {
@@ -56,6 +67,13 @@ button {
   .visible {
     height: 220px;
     padding: $base-padding/2;
+
+    @media (min-width: $tablet) {
+      transition: none;
+      justify-content: space-evenly;
+      padding: $base-padding/2;
+      height: auto;
+    }
   }
 
   .hidden {
@@ -63,11 +81,27 @@ button {
     overflow: hidden;
     height: 0;
     padding: 0;
+
+    @media (min-width: $tablet) {
+      transition: none;
+      justify-content: space-evenly;
+      display: flex;
+      opacity: 1;
+      overflow: visible;
+      height: auto;
+      padding: $base-padding/2;
+    }
   }
 
   .hamburger-wrapper {
     display: flex;
     justify-content: flex-end;
+
+    @media (min-width: $tablet) {
+      transition: none;
+
+      display: none;
+    }
   }
 
   .hamburger {
@@ -177,18 +211,43 @@ p {
 }
 
 #projects {
+  img {
+    width: 80%;
+    border: 2px solid $grey;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    margin-bottom: 2rem;
+
+    &:hover {
+      width: 75%;
+    }
+  }
+
   strong {
+    display: inline-block;
     font-size: 1.7rem;
+    margin: 3px;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      color: lighten($navbar-color, 30%);
+      font-size: 2rem;
+      margin: 0;
+    }
   }
 
   p {
     text-align: left;
     width: 80%;
-    margin: 1rem auto 2rem auto;
+    margin: 1rem auto;
   }
 
   .description {
     text-align: center;
+  }
+
+  #project-description {
+    margin-bottom: 4rem;
   }
 
   .projects-list {
@@ -210,7 +269,11 @@ p {
   }
 
   .means-of-contact {
-    margin-top: 6rem;
+    margin-top: 15vh;
+
+    @media (min-width: $tablet) {
+      margin-top: 20vh;
+    }
   }
 
   .description {
@@ -221,6 +284,7 @@ p {
 }
 
 #footer {
-  padding: 3rem;
+  padding: 2rem;
   border: none;
+  background: $navbar-color;
 }
