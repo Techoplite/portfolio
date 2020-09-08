@@ -297,12 +297,8 @@ p {
     font-size: 1.5rem;
   }
 
-  .section-wrapper {
-    height: 100vh;
-  }
-
   .means-of-contact {
-    margin-top: 15vh;
+    margin: 15vh 0;
 
     @media (min-width: $tablet) {
       margin-top: 20vh;
@@ -320,4 +316,16 @@ p {
   padding: 2rem;
   border: none;
   background: $navbar-color;
+
+  .scroll-to-top {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: -58px -21px;
+  }
 }
