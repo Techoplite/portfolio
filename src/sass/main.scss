@@ -238,18 +238,9 @@ p {
     transition: all 0.2s ease-in;
     margin-bottom: 2rem;
 
-    &:hover {
-      width: 75%;
-    }
-
     @media (min-width: $desktop) {
-      width: 60%;
+      width: 50%;
       transition: all 0.2s ease-in;
-
-      &:hover {
-        width: 55%;
-        margin: 3%;
-      }
     }
   }
 
@@ -263,6 +254,16 @@ p {
       color: lighten($navbar-color, 30%);
       font-size: 2rem;
       margin: 0;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 10rem;
+
+      &:hover {
+        color: lighten($navbar-color, 30%);
+        font-size: 2rem;
+        margin-left: 10rem;
+      }
     }
   }
 
