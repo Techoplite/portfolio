@@ -16,12 +16,22 @@ const Projects = (props) => {
                     <p className="description">Here are some of my projects.</p>
                 </div>
                 <div className="projects-list">
-                    <p><strong>eBazar</strong></p>
-                    <img src={eBazar} alt="eBazar" />
-                    <p><strong>Axess</strong></p>
-                    <img src={axess} alt="axess" />
-                    <p><strong>The Assessment System</strong></p>
-                    <img src={theAssessmentSystem} alt="the-assessment-system" />
+                    <a href="https://github.com/Techoplite/eBazar">
+                        <p>
+                            <strong>eBazar</strong>
+                        </p>
+                        <img src={eBazar} alt="eBazar" />
+                    </a>
+                    <a href="https://github.com/Techoplite/Axess">
+                        <p><strong>Axess</strong></p>
+                        <img src={axess} alt="axess" />
+                    </a>
+                    <a href="https://github.com/Techoplite/assessment-system">
+                        <p>
+                            <strong>The Assessment System</strong>
+                        </p>
+                        <img src={theAssessmentSystem} alt="the-assessment-system" />
+                    </a>
                 </div>
             </div>
         </section>
