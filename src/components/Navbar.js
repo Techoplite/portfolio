@@ -21,28 +21,28 @@ const Navbar = (props) => {
                     to="home"
                     smooth="true"
                     duration={500} >
-                    <div className="link" onClick={handleOnClick}>HOME</div>
+                    <div className="link" onClick={handleOnClick}><button className="link-text">HOME</button></div>
                 </Link>
                 <Link
                     to="about"
                     smooth="true"
                     offset={-63}
                     duration={500}>
-                    <div className="link" onClick={handleOnClick}>ABOUT</div>
+                    <div className="link" onClick={handleOnClick}><button className="link-text">ABOUT</button></div>
                 </Link>
                 <Link
                     to="projects"
                     smooth="true"
                     offset={-63}
                     duration={500}>
-                    <div className="link" onClick={handleOnClick}>PROJECTS</div>
+                    <div className="link" onClick={handleOnClick}><button className="link-text">PROJECTS</button></div>
                 </Link>
                 <Link
                     to="contacts"
                     smooth="true"
                     offset={-63}
                     duration={500}>
-                    <div className="link" onClick={handleOnClick}>CONTACTS</div>
+                    <div className="link" onClick={handleOnClick}><button className="link-text">CONTACTS</button></div>
                 </Link >
             </div >
         </div >

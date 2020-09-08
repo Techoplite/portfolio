@@ -60,6 +60,16 @@ button {
     }
   }
 
+  button {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    &:hover {
+      color: $highlight;
+    }
+  }
+
   .link {
     padding: $base-padding;
   }

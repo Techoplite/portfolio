@@ -11,7 +11,7 @@ const Home = (props) => {
                 <div className="flex-column home-text">
                     <div className="flex-row" id="greeting">
                         <code><pre>Hello World, </pre></code>
-                        <code>I'm <span className="highlight">Mirko Oricci.</span></code>
+                        <code>I'm <span className="highlight">Mirko Oricci</span>.</code>
                     </div>
 
                     <div className="job">
