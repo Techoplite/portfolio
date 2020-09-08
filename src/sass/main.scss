@@ -147,11 +147,19 @@ button {
   width: 99%;
   margin-top: 30%;
 
+  @media (min-width: $tablet) {
+        margin-top: 0;
+    }
+
   .job {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 2rem;
     text-align: center;
     padding: 0 $base-padding;
+
+    @media (min-width: $tablet) {
+      font-size: 3rem;
+    }
   }
 
   #greeting {
@@ -163,6 +171,12 @@ button {
     width: -moz-fit-content;
     width: fit-content;
     padding: $base-padding;
+  }
+
+  code {
+    @media (min-width: $tablet) {
+      font-size: 3rem;
+    }
   }
 
   .highlight {
