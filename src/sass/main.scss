@@ -72,7 +72,7 @@ button {
   .link {
     padding: $base-padding;
     width: fit-content;
-    margin: auto; 
+    margin: auto;
   }
 
   .visible {
@@ -151,6 +151,10 @@ button {
 
 #home {
   height: 100vh;
+}
+
+section {
+  min-height: 422px;
 }
 
 .home-text {
