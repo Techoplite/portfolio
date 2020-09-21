@@ -34,6 +34,13 @@ const Projects = (props) => {
                     </a>
                     <p className="description">And, of course, this very website...</p>
                 </div>
+                <h1>
+                    CURRENTLY WORKING ON...
+                    </h1>
+                <div className="paragraph">
+                    <p className="description" >Just started a family-planner website using React, Redux and Material UI.</p>
+                    <p className="description" >You can view the current stage by clicking <a href="https://family-planner-94216.web.app/">here</a>.</p>
+                </div>
             </div>
         </section>
     );
