@@ -49,6 +49,11 @@ button {
     position: absolute;
     width: 100%;
     transition: all 0.3s ease-in-out;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
     border-bottom: 3px solid $navbar-color;
 
     @media (min-width: $tablet) {
@@ -248,6 +253,7 @@ p {
     width: 80%;
     border: 2px solid $grey;
     border-radius: 5px;
+    margin-bottom: 5rem;
 
     @media (min-width: $desktop) {
       width: 50%;

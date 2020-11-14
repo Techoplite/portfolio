@@ -2,6 +2,7 @@ import React from 'react'
 import eBazar from './../images/Annotation 2020-09-07 094053.png'
 import axess from './../images/Annotation 2020-09-07 105526.png'
 import theAssessmentSystem from './../images/Annotation 2020-09-07 105708.png'
+import iFam from './../images/Screenshot 2020-11-14 172752.png'
 
 const Projects = (props) => {
     return (
@@ -16,6 +17,12 @@ const Projects = (props) => {
                     <p className="description" id="project-description">Here are some of my projects.</p>
                 </div>
                 <div className="projects-list">
+                    <a href="https://family-planner-94216.web.app/">
+                        <p>
+                            <strong>iFam</strong>
+                        </p>
+                        <img src={iFam} alt="iFam" />
+                    </a>
                     <a href="https://github.com/Techoplite/eBazar">
                         <p>
                             <strong>eBazar</strong>
@@ -32,14 +39,7 @@ const Projects = (props) => {
                         </p>
                         <img src={theAssessmentSystem} alt="the-assessment-system" />
                     </a>
-                    <p className="description">And, of course, this very website...</p>
-                </div>
-                <h1>
-                    CURRENTLY WORKING ON...
-                    </h1>
-                <div className="paragraph">
-                    <p className="description" >Just started a family-planner website using React, Redux and Material UI.</p>
-                    <p className="description" >You can view the current stage by clicking <a href="https://family-planner-94216.web.app/">here</a>.</p>
+                    <h2 style={{ background: "#19192d", color: "white", padding: "2rem" }}>And, of course, this portfolio website...</h2>
                 </div>
             </div>
         </section>
