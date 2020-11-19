@@ -39,7 +39,7 @@ const Projects = (props) => {
                         </p>
                         <img src={theAssessmentSystem} alt="the-assessment-system" />
                     </a>
-                    <h2 style={{ background: "#19192d", color: "white", padding: "2rem" }}>And, of course, this portfolio website...</h2>
+                    <h2 style={{ background: "#19192d", color: "white", padding: "2rem", marginBottom: "-50px" }}>And, of course, this portfolio website...</h2>
                 </div>
             </div>
         </section>
