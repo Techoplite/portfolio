@@ -75,6 +75,11 @@ const ProgrammingIcons = () => {
                 <h3>Material UI</h3>
 
             </div>
+            <div className="icon">
+                <img src="https://img.icons8.com/color/480/000000/firebase.png" alt="Firebase" style={{ width: "100%" }} />
+                <h3>Firebase</h3>
+
+            </div>
         </Fragment >
     );
 }
