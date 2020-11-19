@@ -70,6 +70,11 @@ const ProgrammingIcons = () => {
                 <h3>Sass</h3>
 
             </div>
+            <div className="icon">
+                <img src="https://img.icons8.com/color/480/000000/material-ui.png" alt="Material UI" style={{ width: "100%" }} />
+                <h3>Material UI</h3>
+
+            </div>
         </Fragment >
     );
 }
