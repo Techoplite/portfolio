@@ -3,6 +3,7 @@ import eBazar from './../images/Annotation 2020-09-07 094053.png'
 import axess from './../images/Annotation 2020-09-07 105526.png'
 import theAssessmentSystem from './../images/Annotation 2020-09-07 105708.png'
 import iFam from './../images/Screenshot 2020-11-14 172752.png'
+import doesPizza from './../images/does-pizza.png'
 
 const Projects = (props) => {
     return (
@@ -17,6 +18,12 @@ const Projects = (props) => {
                     <p className="description" id="project-description">Here are some of my projects.</p>
                 </div>
                 <div className="projects-list">
+                    <a href="https://doe-s-pizza.vercel.app/">
+                        <p>
+                            <strong>Doe's Pizza (Beta version)</strong>
+                        </p>
+                        <img src={doesPizza} alt="Doe's Pizza" />
+                    </a>
                     <a href="https://family-planner-94216.web.app/">
                         <p>
                             <strong>iFam</strong>
