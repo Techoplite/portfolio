@@ -1,347 +1,299 @@
-@import "variables", "mixins", "resets", "effects";
-
+@import "variables",
+"mixins",
+"resets",
+"effects";
 .flex-column {
-  @include flex-center(column);
+    @include flex-center(column);
 }
 
 .flex-row {
-  @include flex-center(row);
+    @include flex-center(row);
 }
 
 button {
-  font-size: 1rem;
-  padding: $base-padding/1.5;
-  background: none;
-  border: 2px solid $white;
-  color: $white;
-  margin: 1rem;
-  max-width: 80vw;
-  margin: 3rem 0 0 0;
-  display: flex;
-  align-items: center;
-  transition: all 0.2s ease;
-
-  @media (min-width: $tablet) {
-    padding: $base-padding;
-  }
-
-  &:hover {
-    background: rgba($navbar-color, 0.5);
-  }
-
-  .angle-double-down {
-    margin-left: 10px;
-  }
+    font-size: 1rem;
+    padding: $base-padding/1.5;
+    background: none;
+    border: 2px solid $white;
+    color: $white;
+    margin: 1rem;
+    max-width: 80vw;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    @media (min-width: $tablet) {
+        padding: $base-padding;
+    }
+    &:hover {
+        background: rgba($navbar-color, 0.5);
+    }
+    .angle-double-down {
+        margin-left: 10px;
+    }
 }
 
 .navbar {
-  background: $navbar-color;
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-  position: fixed;
-  width: 100vw;
-  border-bottom: 3px solid lighten($navbar-color, 13%);
-
-  .nav-links {
-    background-color: darken($navbar-color, 7%);
-    top: 60px;
-    position: absolute;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
-    border-bottom: 3px solid $navbar-color;
-
-    @media (min-width: $tablet) {
-      transition: none;
-      display: flex;
-      top: 0;
-      background: $navbar-color;
-    }
-  }
-
-  button {
-    border: none;
-    outline: none;
-    margin: 0;
-    padding: 0;
-    &:hover {
-      color: $highlight;
-    }
-  }
-
-  .link {
-    padding: $base-padding;
-    width: fit-content;
-    margin: auto;
-  }
-
-  .visible {
-    height: 220px;
-    padding: $base-padding/2;
-
-    @media (min-width: $tablet) {
-      transition: none;
-      justify-content: space-evenly;
-      padding: $base-padding/2;
-      height: auto;
-    }
-  }
-
-  .hidden {
-    opacity: 0;
-    overflow: hidden;
-    height: 0;
-    padding: 0;
-
-    @media (min-width: $tablet) {
-      transition: none;
-      justify-content: space-evenly;
-      display: flex;
-      opacity: 1;
-      overflow: visible;
-      height: auto;
-      padding: $base-padding/2;
-    }
-  }
-
-  .hamburger-wrapper {
+    background: $navbar-color;
     display: flex;
-    justify-content: flex-end;
-
-    @media (min-width: $tablet) {
-      transition: none;
-
-      display: none;
+    flex-direction: column;
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    border-bottom: 3px solid lighten($navbar-color, 13%);
+    .nav-links {
+        background-color: darken($navbar-color, 7%);
+        top: 60px;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        border-bottom: 3px solid $navbar-color;
+        @media (min-width: $tablet) {
+            transition: none;
+            display: flex;
+            top: 0;
+            background: $navbar-color;
+        }
     }
-  }
-
-  .hamburger {
-    width: fit-content;
-    margin: 1rem 0.8rem;
-
-    .line {
-      width: 30px;
-      height: 4px;
-      background-color: white;
-      margin: 4px;
-      opacity: 1;
-      transition: width opacity transform 0.2s ease-out;
+    button {
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        &:hover {
+            color: $highlight;
+        }
     }
-
-    #top-line.open {
-      transform: rotate(45deg) translateY(5px) translateX(6px);
-      width: 35px;
+    .link {
+        padding: $base-padding;
+        width: fit-content;
+        margin: auto;
     }
-
-    #bottom-line.open {
-      transform: rotate(-45deg) translateY(-6px) translateX(5px);
-      width: 35px;
+    .visible {
+        height: 220px;
+        padding: $base-padding/2;
+        @media (min-width: $tablet) {
+            transition: none;
+            justify-content: space-evenly;
+            padding: $base-padding/2;
+            height: auto;
+        }
     }
-
-    #middle-line.open {
-      opacity: 0;
-      transform: rotate(180deg);
+    .hidden {
+        opacity: 0;
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+        @media (min-width: $tablet) {
+            transition: none;
+            justify-content: space-evenly;
+            display: flex;
+            opacity: 1;
+            overflow: visible;
+            height: auto;
+            padding: $base-padding/2;
+        }
     }
-  }
+    .hamburger-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        @media (min-width: $tablet) {
+            transition: none;
+            display: none;
+        }
+    }
+    .hamburger {
+        width: fit-content;
+        margin: 1rem 0.8rem;
+        .line {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 4px;
+            opacity: 1;
+            transition: width opacity transform 0.2s ease-out;
+        }
+        #top-line.open {
+            transform: rotate(45deg) translateY(5px) translateX(6px);
+            width: 35px;
+        }
+        #bottom-line.open {
+            transform: rotate(-45deg) translateY(-6px) translateX(5px);
+            width: 35px;
+        }
+        #middle-line.open {
+            opacity: 0;
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .section-wrapper {
-  background-color: $white;
-  width: 100%;
+    background-color: $white;
+    width: 100%;
 }
 
 #home {
-  height: 100vh;
-  min-height: 422px;
+    height: 100vh;
+    min-height: 422px;
 }
 
 .home-text {
-  min-width: 204px;
-  width: 99%;
-  margin-top: 30%;
-
-  @media (min-width: $tablet) {
-    margin-top: 0;
-  }
-
-  .job {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    padding: 0 $base-padding;
-
+    min-width: 204px;
+    width: 99%;
+    margin-top: 30%;
     @media (min-width: $tablet) {
-      font-size: 3rem;
+        margin-top: 0;
     }
-  }
-
-  #greeting {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: $base-padding;
-  }
-
-  code {
-    @media (min-width: $tablet) {
-      font-size: 3rem;
+    .job {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 $base-padding;
+        @media (min-width: $tablet) {
+            font-size: 3rem;
+        }
     }
-  }
-
-  .highlight {
-    color: $highlight;
-  }
+    #greeting {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: $base-padding;
+    }
+    code {
+        @media (min-width: $tablet) {
+            font-size: 3rem;
+        }
+    }
+    .highlight {
+        color: $highlight;
+    }
 }
 
 .header {
-  border-bottom: 3px solid $navbar-color;
-  width: fit-content;
-  margin: 0 auto;
+    border-bottom: 3px solid $navbar-color;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 h1 {
-  color: $navbar-color;
-  font-size: 2rem;
-  margin-bottom: 0;
+    color: $navbar-color;
+    font-size: 2rem;
+    margin-bottom: 0;
 }
 
 h3 {
-  color: $black;
-  text-align: center;
+    color: $black;
+    text-align: center;
 }
 
 p {
-  color: $black;
-  font-size: 1.1rem;
+    color: $black;
+    font-size: 1.1rem;
 }
 
 .icons-list {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 1rem;
-  flex-wrap: wrap;
-  margin-top: -0.5rem;
-
-  @media (min-width: $desktop) {
-    width: 50%;
-    margin: auto;
-    padding: 4rem;
-  }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+    @media (min-width: $desktop) {
+        width: 50%;
+        margin: auto;
+        padding: 4rem;
+    }
 }
 
 .paragraph {
-  padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .icon {
-  width: 16%;
-  margin: 1rem;
+    width: 16%;
+    margin: 1rem;
 }
 
 #projects {
-  img {
-    width: 80%;
-    border: 2px solid $grey;
-    border-radius: 5px;
-    margin-bottom: 5rem;
-
-    @media (min-width: $desktop) {
-      width: 50%;
+    img {
+        width: 80%;
+        border: 2px solid $grey;
+        border-radius: 5px;
+        margin-bottom: 5rem;
+        @media (min-width: $desktop) {
+            width: 50%;
+        }
     }
-  }
-
-  strong {
-    display: inline-block;
-    font-size: 1.7rem;
-    margin: 3px;
-    transition: all 0.1s ease-in;
-
-    &:hover {
-      color: lighten($navbar-color, 30%);
-      font-size: 2rem;
-      margin: 0;
+    strong {
+        display: inline-block;
+        font-size: 1.7rem;
+        margin: 3px;
+        transition: all 0.1s ease-in;
+        @media (min-width: $desktop) {
+            margin-left: 10rem;
+        }
     }
-
-    @media (min-width: $desktop) {
-      margin-left: 10rem;
-
-      &:hover {
-        color: lighten($navbar-color, 30%);
-        font-size: 2rem;
-        margin-left: 10rem;
-      }
+    p {
+        text-align: left;
+        width: 80%;
+        margin: 1rem auto;
     }
-  }
-
-  p {
-    text-align: left;
-    width: 80%;
-    margin: 1rem auto;
-  }
-
-  .description {
-    text-align: center;
-  }
-
-  #project-description {
-    margin-bottom: 4rem;
-  }
-
-  .projects-list {
-    margin-bottom: 3rem;
-  }
+    .description {
+        text-align: center;
+    }
+    #project-description {
+        margin-bottom: 4rem;
+    }
+    .projects-list {
+        margin-bottom: 3rem;
+    }
 }
 
 #contacts {
-  border: none;
-
-  p {
-    text-align: left;
-    width: 80%;
-    margin: auto auto 1rem auto;
-    width: fit-content;
-    font-size: 1.5rem;
-  }
-
-  .means-of-contact {
-    margin: 15vh 0;
-
-    @media (min-width: $tablet) {
-      margin-top: 20vh;
+    border: none;
+    p {
+        text-align: left;
+        width: 80%;
+        margin: auto auto 1rem auto;
+        width: fit-content;
+        font-size: 1.5rem;
     }
-  }
-
-  .description {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-top: 2rem;
-  }
+    .means-of-contact {
+        margin: 15vh 0;
+        @media (min-width: $tablet) {
+            margin-top: 20vh;
+        }
+    }
+    .description {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
 }
 
 #footer {
-  padding: 2rem;
-  border: none;
-  background: $navbar-color;
-
-  .scroll-to-top {
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    margin: -58px -21px;
-  }
+    padding: 2rem;
+    border: none;
+    background: $navbar-color;
+    .scroll-to-top {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: -58px -21px;
+    }
 }

@@ -20,7 +20,7 @@ const Projects = (props) => {
                 <div className="projects-list">
                     <a href="https://doe-s-pizza.vercel.app/">
                         <p>
-                            <strong>Doe's Pizza (Beta version)</strong>
+                            <strong>Doe's Pizza (Beta version, for more info see <a href="https://github.com/Techoplite/Doe-s-Pizza/blob/main/README.md"> README</a>)</strong>
                         </p>
                         <img src={doesPizza} alt="Doe's Pizza" />
                     </a>
